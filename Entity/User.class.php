@@ -3,5 +3,10 @@
 namespace Entity\User;
 
 class User {
-  private 
+  private $name;
+  private $first_name;
+  private $pseudo;
+  private $mail;
+  private $adresse;
+  private $postal;
 }
