@@ -1,7 +1,14 @@
 img/
 
 # SCSS
-.sass-cache/
 *.css.map
 *.sass.map
 *.scss.map
+
+# CACHE
+.sass-cache/
+.twig-cache/
+
+# Node
+vendor/
+node_modules/
