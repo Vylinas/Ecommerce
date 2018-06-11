@@ -1,7 +1,5 @@
 <?php
 
-namespace Entity\User;
-
 class User {
   private $name;
   private $first_name;

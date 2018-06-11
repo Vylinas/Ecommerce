@@ -13,15 +13,8 @@
     <title>Document</title>
 </head>
 <body>
-<script>
-
-new Vue({
-    el: '#block',
-    data: {
-        pseudo: user.pseudo,
-    }
-})
-
-</script>
+    <?php include "config.php" ?>
+    <!--?php include "Component/nav/nav.tpl.php" ?-->
+    <?php include "Component/header/header.tpl.php" ?>
 </body>
 </html>

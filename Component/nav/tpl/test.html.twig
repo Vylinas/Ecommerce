@@ -1,0 +1,7 @@
+<ul id="nav" class="drop">
+  {% for item in items %}
+    {% if item.parentMenu is same as(false) %}
+      <li><a href="{{ item.url }}" >{{ item.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>

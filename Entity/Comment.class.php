@@ -1,7 +1,5 @@
 <?php
 
-namespace Entity\Comment;
-
 class Comment {
   private $content;
   private $user;

@@ -1,7 +1,5 @@
 <?php
 
-namespace Entity\Product;
-
 class Product {
     // Only for the product
     private $img;             // Image of the product
