@@ -1,7 +1,18 @@
 <ul id="nav" class="drop">
-  {% for item in items %}
-    {% if item.parentMenu is same as(false) %}
-      <li><a href="{{ item.url }}" >{{ item.title }}</a></li>
-    {% endif %}
-  {% endfor %}
+    {% for item in items %} 
+        {% if item.parentMenu is same as(false) %} 
+            {% set ancienId = item.id|number_format %}
+            {% set has_subMenu = item.SubMenu %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% for item in items %}
+                {% if has_subMenu is same as(true)%}
+                    <ul>
+                    {% if ancienId is same as(item.parentMenu) %}
+                        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                    {% endif %}
+                    </ul>
+                {% endif %}
+            {% endfor %} 
+        {% endif %} 
+    {% endfor %}
 </ul>
